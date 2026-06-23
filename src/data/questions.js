@@ -32,6 +32,23 @@ const questions = [
   { id: 24, category: 'Trivia', difficulty: 'Medium', question: 'What is the name of Springfield\'s local bar?', options: ["Moe's Tavern", "Duff Gardens", "Kwik-E-Mart", "The Android's Dungeon"], answer: 0 },
   { id: 25, category: 'Trivia', difficulty: 'Hard', question: 'Who created The Simpsons?', options: ['Matt Groening', 'Seth MacFarlane', 'Mike Judge', 'Trey Parker'], answer: 0 },
   { id: 26, category: 'Trivia', difficulty: 'Hard', question: 'What is the name of the comic book store owner?', options: ['Comic Book Guy', 'Jeff Albertson', 'Both A and B', 'Gil Gunderson'], answer: 2 },
+
+  // User-submitted batch
+  { id: 27, category: 'Episodes', difficulty: 'Medium', question: 'S9E14 "Das Bus": What fruit caused Otto to crash the school bus?', options: ['Grapefruit', 'Apple', 'Orange', 'Banana'], answer: 0 },
+  { id: 28, category: 'Characters', difficulty: 'Easy', question: "What is Marge Simpson's maiden name?", options: ['Bouvier', 'Smith', 'Windgate', 'Skinner'], answer: 0 },
+  { id: 29, category: 'Characters', difficulty: 'Easy', question: "What is the name of Springfield Elementary's groundskeeper?", options: ['Groundskeeper Willie', 'Groundskeeper Billy', 'Groundskeeper Milly', 'Groundskeeper Nelson'], answer: 0 },
+  { id: 30, category: 'Episodes', difficulty: 'Medium', question: 'Who accidentally shot Mr. Burns in the classic two-part episode?', options: ['Maggie Simpson', 'Smithers', 'Bart Simpson', 'Lisa Simpson'], answer: 0 },
+  { id: 31, category: 'Characters', difficulty: 'Easy', question: "What are the names of Marge's sisters?", options: ['Selma and Patty', 'Thelma and Sally', 'Maggie and Lisa', 'Martin and Sandy'], answer: 0 },
+  { id: 32, category: 'Characters', difficulty: 'Medium', question: "What is Moe's last name?", options: ['Szyslak', 'Black', 'Coatrack', 'Duff'], answer: 0 },
+  { id: 33, category: 'Trivia', difficulty: 'Easy', question: "What is Springfield's local beer brand?", options: ['Duff', 'Miller', 'Bud', 'Ruff'], answer: 0 },
+  { id: 34, category: 'Trivia', difficulty: 'Easy', question: 'What street do the Simpsons live on?', options: ['Evergreen Terrace', 'Evergreen Road', 'Evergreen Avenue', 'Evergreen Court'], answer: 0 },
+  { id: 35, category: 'Trivia', difficulty: 'Easy', question: "What is the name of Bart and Lisa's favorite cartoon duo?", options: ['Itchy and Scratchy', 'Ritchie and Blacky', "Krusty the Clown's Cartoon Hour", "Krusty's Cat and Mouse Hour"], answer: 0 },
+  { id: 36, category: 'Episodes', difficulty: 'Medium', question: "What is the name of Homer's barbershop quartet?", options: ['The B-Flats', 'The Be Sharps', 'The B-Stills', 'The B-Shorts'], answer: 1 },
+  { id: 37, category: 'Episodes', difficulty: 'Medium', question: 'Which former U.S. president moves in next door to the Simpsons?', options: ['George H.W. Bush', 'George W. Bush', 'Bill Clinton', 'Dan Quayle'], answer: 0 },
+  { id: 38, category: 'Characters', difficulty: 'Hard', question: "What is the name of Homer's helper monkey?", options: ['Mojo', 'Banjo', 'Poppers', 'Broody'], answer: 0 },
+  { id: 39, category: 'Episodes', difficulty: 'Hard', question: "What is the name of Bart's tabloid-style TV news show?", options: ["Bart's People", "Bart's Corner", "Bart's Totally Awesome News Hour", "News by Bart"], answer: 0 },
+  { id: 40, category: 'Episodes', difficulty: 'Hard', question: "What is the name of Bart's boy band?", options: ['Party Posse', 'Boys of Springfield', 'Boyz Wander', 'USS Sean Spanker'], answer: 0 },
+  { id: 41, category: 'Trivia', difficulty: 'Easy', question: 'What food is Homer Simpson most famously obsessed with?', options: ['Doughnuts', 'Chicken', 'Ribs', 'Pork rinds'], answer: 0 },
 ];
 
 export default questions;

@@ -17,6 +17,8 @@ function App() {
   const [pool, setPool] = useState([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [level, setLevel] = useState(1);
   const [selected, setSelected] = useState(null);
   const [timeLeft, setTimeLeft] = useState(QUESTION_TIME);
 
@@ -53,6 +55,8 @@ function App() {
     setPool(shuffle(filtered));
     setIndex(0);
     setScore(0);
+    setStreak(0);
+    setLevel(1);
     setSelected(null);
     setTimeLeft(QUESTION_TIME);
     setStage('playing');
@@ -62,7 +66,12 @@ function App() {
     if (selected !== null) return;
     setSelected(optionIndex);
     if (optionIndex === currentQuestion.answer) {
-      setScore((s) => s + 1);
+      const nextStreak = streak + 1;
+      setScore((s) => s + 10 * level + streak * 2);
+      setStreak(nextStreak);
+      if (nextStreak % 3 === 0) setLevel((l) => l + 1);
+    } else {
+      setStreak(0);
     }
     setTimeout(goToNext, 1200);
   };
@@ -102,7 +111,10 @@ function App() {
         <header className="App-header">
           <h1>Game Over!</h1>
           <p className="score-display">
-            You scored {score} / {pool.length}
+            Final Score: {score}
+          </p>
+          <p className="score-display">
+            Reached Level {level} · Best Streak {streak}
           </p>
           <button className="primary-btn" onClick={() => setStage('start')}>
             Play Again
@@ -116,8 +128,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="hud">
-          <span>Question {index + 1} / {pool.length}</span>
+          <span>Q {index + 1}/{pool.length}</span>
           <span>Score: {score}</span>
+          <span>Level: {level}</span>
+          <span>Streak: {streak}</span>
           <span>Time: {timeLeft}s</span>
         </div>
         <div className="timer-bar">
