@@ -2,19 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #1a1a2e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +11,125 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #ffd90f;
+  margin-bottom: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selector {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-size: 0.5em;
+}
+
+.selector label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+select {
+  font-size: 1em;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #ffd90f;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #ffe85c;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 480px;
+  font-size: 0.4em;
+  margin-bottom: 12px;
+}
+
+.timer-bar {
+  width: 100%;
+  max-width: 480px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.timer-bar-fill {
+  height: 100%;
+  background-color: #ffd90f;
+  transition: width 1s linear;
+}
+
+.category-tag {
+  font-size: 0.35em;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.question-text {
+  font-size: 0.6em;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.option-btn {
+  font-size: 0.45em;
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid #444;
+  background-color: #2a2a40;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: #ffd90f;
+}
+
+.option-btn.correct {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+}
+
+.option-btn.incorrect {
+  background-color: #c62828;
+  border-color: #c62828;
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+.score-display {
+  font-size: 0.5em;
+  margin-bottom: 24px;
 }
