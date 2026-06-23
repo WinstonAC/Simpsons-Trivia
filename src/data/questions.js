@@ -58,6 +58,14 @@ const questions = [
   { id: 46, category: 'Episodes', difficulty: 'Hard', question: 'What video game does Bart shoplift at Christmas?', options: ['Bonestorm', 'Bone-Crusher 5', 'Skateboard Killer', 'Thrasher'], answer: 0 },
   { id: 47, category: 'Episodes', difficulty: 'Hard', question: 'In "Bart Sells His Soul," what rock song does the church organist unknowingly play after Bart submits fake hymn lyrics?', options: ['In-A-Gadda-Da-Vida', 'Iron Man', 'Smoke on the Water', 'Stairway to Heaven'], answer: 0 },
   { id: 48, category: 'Characters', difficulty: 'Hard', question: "What is Duffman's most commonly cited real name?", options: ['Barry Duffman', 'Sid', 'Larry', 'Joe'], answer: 0 },
+
+  // Second round of clarifications
+  { id: 49, category: 'Episodes', difficulty: 'Medium', question: 'True or False: In "Mayored to the Mob," Homer becomes Mayor Quimby\'s bodyguard.', options: ['True', 'False'], answer: 0 },
+  { id: 50, category: 'Characters', difficulty: 'Hard', question: 'According to "Viva Ned Flanders," how old is Ned Flanders?', options: ['60', '50', '40', '66'], answer: 0 },
+  { id: 51, category: 'Episodes', difficulty: 'Medium', question: 'In "I\'m with Cupid," what holiday does Elton John perform for?', options: ["Valentine's Day", 'Christmas Day', 'Independence Day', 'Thanksgiving Day'], answer: 0 },
+  { id: 52, category: 'Trivia', difficulty: 'Medium', question: 'What is the name of the SUV Marge falls in love with?', options: ['Canyonero', 'CanyonArrow', 'CanyonKrusher', 'Canyonator'], answer: 0 },
+  { id: 53, category: 'Episodes', difficulty: 'Hard', question: 'On what holiday does Bart get drunk, embarrassing Marge during a parade?', options: ["St. Patrick's Day", "New Year's Eve", 'Christmas', 'Halloween'], answer: 0 },
+  { id: 54, category: 'Episodes', difficulty: 'Medium', question: 'Why does Homer resemble Krusty the Clown?', options: ['He was originally designed to double as Krusty', 'They are secretly brothers', "Krusty is Homer's father", "Krusty is Homer's son"], answer: 0 },
 ];
 
 export default questions;
