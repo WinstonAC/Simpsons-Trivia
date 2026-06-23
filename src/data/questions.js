@@ -49,6 +49,15 @@ const questions = [
   { id: 39, category: 'Episodes', difficulty: 'Hard', question: "What is the name of Bart's tabloid-style TV news show?", options: ["Bart's People", "Bart's Corner", "Bart's Totally Awesome News Hour", "News by Bart"], answer: 0 },
   { id: 40, category: 'Episodes', difficulty: 'Hard', question: "What is the name of Bart's boy band?", options: ['Party Posse', 'Boys of Springfield', 'Boyz Wander', 'USS Sean Spanker'], answer: 0 },
   { id: 41, category: 'Trivia', difficulty: 'Easy', question: 'What food is Homer Simpson most famously obsessed with?', options: ['Doughnuts', 'Chicken', 'Ribs', 'Pork rinds'], answer: 0 },
+
+  // Follow-up clarifications
+  { id: 42, category: 'Episodes', difficulty: 'Medium', question: 'In "The Joy of Sect," what modern-day cult, similar to Scientology, do the Simpsons join?', options: ['Movementarian', 'Libertarian', 'Christian', 'Jackrabbittry'], answer: 0 },
+  { id: 43, category: 'Characters', difficulty: 'Easy', question: "What is Milhouse's last name?", options: ['Van Houten', 'James', 'Vanderpump', 'Vanderbilt'], answer: 0 },
+  { id: 44, category: 'Characters', difficulty: 'Medium', question: "What is the name of Bart's Black classmate at Springfield Elementary?", options: ['Lewis', 'Wendell', 'Gerald', 'Jerome'], answer: 0 },
+  { id: 45, category: 'Episodes', difficulty: 'Medium', question: 'Who does Marge set Bart up on a playdate with?', options: ['Ralph Wiggum', 'Martin Prince', 'Milhouse Van Houten', 'Krusty the Clown'], answer: 0 },
+  { id: 46, category: 'Episodes', difficulty: 'Hard', question: 'What video game does Bart shoplift at Christmas?', options: ['Bonestorm', 'Bone-Crusher 5', 'Skateboard Killer', 'Thrasher'], answer: 0 },
+  { id: 47, category: 'Episodes', difficulty: 'Hard', question: 'In "Bart Sells His Soul," what rock song does the church organist unknowingly play after Bart submits fake hymn lyrics?', options: ['In-A-Gadda-Da-Vida', 'Iron Man', 'Smoke on the Water', 'Stairway to Heaven'], answer: 0 },
+  { id: 48, category: 'Characters', difficulty: 'Hard', question: "What is Duffman's most commonly cited real name?", options: ['Barry Duffman', 'Sid', 'Larry', 'Joe'], answer: 0 },
 ];
 
 export default questions;
